@@ -1,4 +1,27 @@
-div.tweetwall_wall.theme-1 a:link, div.tweetwall_wall.theme-1 a:visited {
-     color: red;
-     font-size: 16px;
- }
+.tweet {
+    border-bottom: 4px #14883E solid !important;
+    padding: 10px !important;
+    height: 232px;
+    font-size: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.tweet:nth-of-type(4n-2){
+    border-color: #0E6BBA !important;
+}
+
+.tweet:nth-of-type(4n-1){
+    border-color: #CE3430 !important;
+}
+
+.tweet:nth-of-type(4n){
+    border-color: #F6BA2D !important;
+}
+.reply {
+    display: none !important;
+}
+
+div.tweetwall_wall li {
+    width: 321px !important;
+}
