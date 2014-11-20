@@ -3,7 +3,7 @@
 $url = "http://devtest.tweetwally.com/iphone";
 $styleFile = "style.css";
 
-$content = file_get_contents($url);
+$content = file_get_contents($url ."?$_SERVER[QUERY_STRING]");
 
 $base = "<base href='$url'/>";
 $style = "<link rel='stylesheet' href='http://$_SERVER[HTTP_HOST]/$styleFile'>";
